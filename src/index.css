@@ -9,20 +9,20 @@ html {
 }
 
 .quiz-container {
- height: 100vh;
+ /* height: 100vh; */
  display: flex;
  justify-content: center;
  align-items: center;
  background-image: linear-gradient(to bottom,#cff7f1, #70e2da);
- /* min-height: 100vh; */
+ min-height: 100vh;
 }
 
 .quiz-container-question {
     border-radius: 0.5rem;
-    /* min-height: 400px;
-    min-width: 60%; */
-    height: 400px;
-    width: 60%;
+    min-height: 400px;
+    min-width: 60%;
+    /* height: 400px;
+    width: 60%; */
     margin: 0 auto;
     text-align: center;
     background-color: black;
