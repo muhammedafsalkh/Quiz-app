@@ -31,9 +31,8 @@ function App() {
   }
   return (
     
-   <>
-   <h1 className='head'>Quiz-App</h1>
-      <div className="quiz-container">
+   
+   <div className="quiz-container">
 
         {
           showScore ?(
@@ -56,7 +55,7 @@ function App() {
           )
         }
       </div>
-   </>
+   
   );
 }
 
