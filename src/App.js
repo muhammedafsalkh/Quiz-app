@@ -30,29 +30,33 @@ function App() {
     setShowScore(false)
   }
   return (
-    <div className="quiz-container">
-      {
-        showScore ?(
-          <>
-         <h1>Your Score is: {score}</h1>
-         <button onClick={reset}>Restart Quiz</button>
-         </>
-         ):(
-          <div className='quiz-container-question'>
-          <p>{currQuestion.question}</p>
-          <div className='quiz-container-options'>
-            <ul className='quiz-container-ul'>
-              {currQuestion.options.map((option,i)=>{
-                return  <li className='quiz-container-li' onClick={()=>selectOption(i)}>{option}</li>
-              })}
-             
-            </ul>
-          </div>
-         </div>
-        )
-      }
     
-    </div>
+   <>
+   <h1 className='head'>Quiz-App</h1>
+      <div className="quiz-container">
+
+        {
+          showScore ?(
+            <>
+           <h1>Your Score is: {score}</h1>
+           <button onClick={reset}>Restart Quiz</button>
+           </>
+           ):(
+            <div className='quiz-container-question'>
+            <p>{currQuestion.question}</p>
+            <div className='quiz-container-options'>
+              <ul className='quiz-container-ul'>
+                {currQuestion.options.map((option,i)=>{
+                  return  <li className='quiz-container-li' onClick={()=>selectOption(i)}>{option}</li>
+                })}
+               
+              </ul>
+            </div>
+           </div>
+          )
+        }
+      </div>
+   </>
   );
 }
 
